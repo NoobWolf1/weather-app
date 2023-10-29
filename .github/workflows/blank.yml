@@ -19,7 +19,7 @@ jobs:
         node-version: '14'
 
     - name: Create .env file
-      run: echo "REACT_APP_API_KEY=${{ secrets.API_KEYS }}" > .env
+      run: echo "REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }}" > .env
 
     - name: Display .env content
       run: cat .env
