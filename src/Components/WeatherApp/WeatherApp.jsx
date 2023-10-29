@@ -12,7 +12,6 @@ import { api_key } from "../../config";
 
 const WeatherApp = () => {
     const [wicon, setWicon] = useState(cloud_icon);
-    console.log('-----apiKey-----', api_key)
     const search = async () => {
         const element = document.getElementsByClassName("cityInput");
         if(element[0].value===""){
